@@ -33,14 +33,17 @@ $twig->display('index.html.twig', array('sleeping' => new class {
 
 #### index.html.twig
 ```twig:index.html.twig
-{{ sleeping }}1
-{{ sleeping }}2
-{{ sleeping }}3
-{{ sleeping }}4
-{{ sleeping }}5
-{{ sleeping }}6
-{{ sleeping }}7
-{{ sleeping }}8
-{{ sleeping }}9
-{{ sleeping }}10
+<pre>
+1{{ sleeping }}
+2{{ sleeping }}
+3{{ sleeping }}
+4{{ sleeping }}
+5{{ sleeping }}
+6{{ sleeping }}
+7{{ sleeping }}
+8{{ sleeping }}
+9{{ sleeping }}
+10{{ sleeping }}
+complete!!!
+</pre>
 ```
