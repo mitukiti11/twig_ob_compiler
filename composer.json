@@ -2,7 +2,7 @@
     "name": "mitukiti11/develop",
     "description": "twig output buffer compiler",
     "type": "library",
-    "license": "BSD 3-Clause License",
+    "license": "BSD-3-Clause-Clear",
     "authors": [
         {
             "name": "mitukiti11",
