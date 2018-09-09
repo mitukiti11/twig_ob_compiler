@@ -1,0 +1,25 @@
+{
+    "name": "mitukiti11/develop",
+    "description": "twig output buffer compiler",
+    "type": "library",
+    "license": "BSD 3-Clause License",
+    "authors": [
+        {
+            "name": "mitukiti11",
+            "email": "buffalo.rage@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "2.x-dev"
+    },
+    
+    "autoload": {
+        "psr-0" : {
+            "Mitts11\\Twig\\" : "lib/"
+        },
+        "psr-4": {
+            "Mitts11\\Twig\\" : "lib/"
+        }
+    }
+}
