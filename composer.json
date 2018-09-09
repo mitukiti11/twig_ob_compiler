@@ -9,10 +9,7 @@
             "email": "buffalo.rage@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "twig/twig": "2.x-dev"
-    },
+    "minimum-stability": "stable",
     
     "autoload": {
         "psr-0" : {
@@ -21,5 +18,11 @@
         "psr-4": {
             "Mitts11\\Twig\\" : "lib/"
         }
+    },
+	"require": {
+	  "twig/twig": "^2.5",
+        "phpunit/phpunit": "^7.3"
+	},
+    "require-dev": {
     }
 }
