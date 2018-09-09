@@ -47,4 +47,4 @@ $twig->display('index.html.twig', array('sleeping' => new class {
 complete!!!
 </pre>
 ```
-
+![バッファリング](https://github.com/mitukiti11/twig_ob_compiler/blob/master/docs/ss.gif "SS")
