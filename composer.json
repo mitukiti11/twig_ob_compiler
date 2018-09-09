@@ -1,5 +1,5 @@
 {
-    "name": "mitukiti11/develop",
+    "name": "mitukiti11/twig_ob_compiler",
     "description": "twig output buffer compiler",
     "type": "library",
     "license": "BSD-3-Clause-Clear",
