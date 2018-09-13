@@ -8,17 +8,28 @@ class TwigObCompiler extends Compiler
 {
 	private $lastLine;
 	
+	/**
+	 * @inheritdoc
+	 */
 	public function compile(\Twig_Node $node, $indentation = 0)
 	{
-		mb_http_output("UTF-8");
+		mb_http_output($this->getEnvironment()->getCharset());
 		echo str_pad("\n ",4096), PHP_EOL;
 		ob_end_flush();
 		ob_start('mb_output_handler');
 		
-		$this->lastLine = null;
-		return parent::compile($node, $indentation);
+		$this->lastLne = null;
+		$result = parent::compile($node, $indentation);
+		
+		ob_flush();
+		flush();
+		
+		return $result;
 	}
 	
+	/**
+	 * @inheritdoc
+	 */
 	public function addDebugInfo(\Twig_Node $node)
 	{
 		if ($node->getTemplateLine() != $this->lastLine) {
