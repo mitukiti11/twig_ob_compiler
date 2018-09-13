@@ -1,8 +1,11 @@
 # twig_ob_compiler
 twig output buffer compiler
 
+[![Latest Stable Version](https://poser.pugx.org/mitukiti11/twig_ob_compiler/version)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
+[![Latest Unstable Version](https://poser.pugx.org/mitukiti11/twig_ob_compiler/v/unstable)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
 [![Build Status](https://travis-ci.org/mitukiti11/twig_ob_compiler.svg?branch=master)](https://travis-ci.org/mitukiti11/twig_ob_compiler)
-
+[![License](https://poser.pugx.org/mitukiti11/twig_ob_compiler/license)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
+[![composer.lock available](https://poser.pugx.org/mitukiti11/twig_ob_compiler/composerlock)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
 
 ```bash
 # install
