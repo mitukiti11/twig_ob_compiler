@@ -1,4 +1,6 @@
-<phpunit backupGlobals="false"
+<phpunit
+		 beStrictAboutOutputDuringTests="false"
+		 backupGlobals="false"
 		 backupStaticAttributes="false"
 		 bootstrap="tests/bootstrap.php"
 		 colors="false"
@@ -16,7 +18,9 @@
 	
 	<filter>
 		<whitelist>
-			<directory suffix=".php">./src/</directory>
+			<directory suffix=".php">./lib</directory>
+			<directory suffix=".php">./docs</directory>
+			<directory suffix=".php">./vendor</directory>
 		</whitelist>
 	</filter>
 </phpunit>
