@@ -6,7 +6,7 @@ twig output buffer compiler
 [![Build Status](https://travis-ci.org/mitukiti11/twig_ob_compiler.svg?branch=master)](https://travis-ci.org/mitukiti11/twig_ob_compiler)
 [![License](https://poser.pugx.org/mitukiti11/twig_ob_compiler/license)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
 [![composer.lock available](https://poser.pugx.org/mitukiti11/twig_ob_compiler/composerlock)](https://packagist.org/packages/mitukiti11/twig_ob_compiler)
-
+[![Coverage Status](https://coveralls.io/repos/github/mitukiti11/twig_ob_compiler/badge.svg?branch=master)](https://coveralls.io/github/mitukiti11/twig_ob_compiler?branch=master)
 ```bash
 # install
 composer install mitukiti11/twig_ob_compiler
