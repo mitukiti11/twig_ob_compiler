@@ -16,8 +16,6 @@ class StandardTest extends TestCase
 	 */
 	public function dummy()
 	{
-		$this->assertEquals(1, 1);
-		
 		$compiler = new TwigObCompiler(new \Twig_Environment($this->getMockBuilder('Twig_LoaderInterface')->getMock()));
 		
 		$locale = setlocale(LC_NUMERIC, 0);
@@ -34,5 +32,31 @@ class StandardTest extends TestCase
 		$this->assertContains('fr', strtolower(setlocale(LC_NUMERIC, 0)));
 		
 		setlocale(LC_NUMERIC, $locale);
+	}
+	
+	/**
+	 * @test
+	 * @runInSeparateProcess
+	 * @expectedException        \Twig_Error_Syntax
+	 * @expectedExceptionMessage Value for argument "from" is required for filter "replace" at line 1.
+	 */
+	public function compile () {
+		
+		$compiler = new TwigObCompiler(new \Twig_Environment($this->getMockBuilder('Twig_LoaderInterface')->getMock()));
+		$value = new \Twig_Node_Expression_Constant(0, 1);
+		$node = $this->createFilter($value, 'replace', array(
+			'to' => new \Twig_Node_Expression_Constant('foo', 1),
+		));
+		$compiler->compile($node);
+		
+		$this->assertEquals('0', ob_get_level());
+	}
+	
+	protected function createFilter($node, $name, array $arguments = array())
+	{
+		$name = new \Twig_Node_Expression_Constant($name, 1);
+		$arguments = new \Twig_Node($arguments);
+		
+		return new \Twig_Node_Expression_Filter($node, $name, $arguments, 1);
 	}
 }
