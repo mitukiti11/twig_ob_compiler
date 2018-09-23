@@ -23,7 +23,7 @@ class TwigObCompiler extends Compiler
 	public function addDebugInfo(\Twig_Node $node)
 	{
 		if ($node->getTemplateLine() != $this->lastLine) {
-			$this->write('ob_flush();flush();\t// flush'.PHP_EOL);
+			$this->write("ob_flush();flush();\t// flush".PHP_EOL);
 			$this->lastLine = $node->getTemplateLine();
 		}
 		return parent::addDebugInfo($node);
