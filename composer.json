@@ -1,6 +1,7 @@
 {
     "name": "mitukiti11/twig_ob_compiler",
-    "description": "twig output buffer compiler",
+    "description": "twig output buffer compiler.",
+    "keywords": ["template", "twig", "output buffer", "TTFB"],
     "type": "library",
     "license": "BSD-3-Clause-Clear",
     "authors": [
